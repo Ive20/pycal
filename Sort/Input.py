@@ -5,14 +5,14 @@ Created on 2014.4.24
 '''
 class Input:
     @staticmethod
-    def input():
+    def getinputarr():
         inputarr=[];
         file_object = open('input.txt');
         try:
             for line in file_object:
                 line=line.strip('\n');
-                inputarr.extend(line.split(' '));
+                inputarr.extend(map(int,line.split(' ')));
         finally:
-            file_object.close()  ;       
+            file_object.close();       
             return inputarr;
     
