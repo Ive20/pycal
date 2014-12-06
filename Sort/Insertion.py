@@ -4,8 +4,8 @@ Created on 2014.4.24.
 @author: maxwell
 
 '''
-import Sort.Input
-arr=Sort.Input.Input.getinputarr()
+import Input
+arr= Input.Input.getinputarr()
 for i in range(0,len(arr)):
     temp=arr[i]
     for j in range(0,i)[::-1]:
